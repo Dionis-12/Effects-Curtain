@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="Width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" href="image/icon.ico">
+	<title> Curtain Effects </title>
+</head>
+
+<body>
+	<!-- Curtain Menu -->
+	<div id="curtain">
+		<span></span>
+		<span></span>
+		<span></span>
+		<ul>
+			<li><a href="#"> Home </a></li>
+			<li><a href="#"> About </a></li>
+			<li><a href="#"> Services </a></li>
+			<li><a href="#"> Portfolio </a></li>
+			<li><a href="#"> Contact </a></li>
+		</ul>
+
+		<!-- Onclick Toggle -->
+		<div class="toggle" onclick="toggle()"></div>
+	</div>
+
+	<!-- Script of Toggle -->
+	<script type="text/javascript">
+		function toggle() {
+			var curtain = document.getElementById('curtain');
+			curtain.classList.toggle('active')
+		}
+	</script>
+</body>
+</html>
